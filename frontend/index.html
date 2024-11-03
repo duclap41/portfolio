@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assert/styles.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-200 montserrat-font">
+    <!-- Navigation bar -->
+    <nav class="bg-black p-4 text-white flex justify-end gap-20 font-semibold">
+        <a href="#" class="p-3 hover:underline">About me</a>
+        <a href="#" class="p-3 hover:underline">Skills</a>
+        <a href="#" class="p-3 hover:underline">Portfolio</a>
+        <a href="#"
+            class="bg-white rounded-full text-black p-3 mr-10 transition-transform transform hover:scale-105 hover:bg-gray-200 transition-colors">
+            CONTACT ME</a>
+    </nav>
+
+    <!-- Main section -->
+    <div class="flex-grow flex flex-col bg-gray-800">
+        <!-- Big picture (3/4 of the remaining height) -->
+        <div class="flex flex-grow relative">
+            <!-- Left Section -->
+            <div class="left-section flex justify-center items-center">
+                <div class="flex flex-col justify-center gap-20 text-black">
+                    <!-- Logo -->
+                    <div>
+                        <img src="assert/image/logo.png" alt="Icon" class="w-16 border-4 border-current p-2 rounded-lg">
+                    </div>
+                    <!-- Greeting -->
+                    <h2 class="text-3xl font-semibold">Hi, I am</h2>
+                    <!-- Name and Position -->
+                    <div>
+                        <h1 class="text-5xl font-bold">Nguyễn Bảo Châu</h1>
+                        <h3 class="text-xl text-gray-400 font-semibold py-2">23520171 - CTTT2023</h3>
+                    </div>
+                    <!-- Social link -->
+                    <div class="flex gap-10 py-10">
+                        <a href="#" class="social-button">
+                            <img src="assert/image/github-icon.svg" alt="Icon" class="w-10">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="assert/image/linkedin-icon.svg" alt="Icon" class="w-10">
+                        </a>
+                        <a href="#" class="social-button">
+                            <img src="assert/image/fb-icon.svg" alt="Icon" class="w-10">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Right Section -->
+            <div class="right-section flex items-end justify-start text-white">
+                <img src="assert/image/picture.png" alt="Image" class="w-3/5 pl-16">
+            </div>
+        </div>
+        
+
+        <!-- Information (1/4 of the remaining height) -->
+        <div class="p-8 flex flex-col gap-5 text-white">
+            <h2 class="text-xl font-bold">INTRODUCTION</h2>
+            <p class="font-sans">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book.</p>
+            <div>
+                <a href="#" class="font-semibold border-l-2 border-r-2 px-2 hover:bg-gray-600 transition-colors">
+                    READ MORE</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
