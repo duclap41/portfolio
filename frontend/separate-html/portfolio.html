@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assert/styles.css" rel="stylesheet">
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-200 montserrat-font">
+    <!-- Navigation bar -->
+    <nav class="bg-black p-4 text-white flex justify-end gap-20 font-semibold">
+        <a href="#" class="p-3 hover:underline">About me</a>
+        <a href="#" class="p-3 hover:underline">Skills</a>
+        <a href="#" class="p-3 hover:underline">Portfolio</a>
+        <a href="#"
+            class="bg-white rounded-full text-black p-3 mr-10 transition-transform transform hover:scale-105 hover:bg-gray-200 transition-colors">
+            CONTACT ME</a>
+    </nav>
+
+    <!-- Main section -->
+    <div class="flex-grow flex items-center justify-center flex-col gap-20 bg-gray-200">
+        <div></div>
+        <!-- Title -->
+        <div>
+            <h1 class="text-2xl tracking-widest font-bold py-6 px-12 border-8 border-current">PORTFOLIO</h1>
+        </div>
+        
+        <!-- Display section -->
+        <div class="flex-grow flex items-center justify-center flex-col gap-20 bg-cover bg-center" style="background-image: url('assert/image/background.jpg');">
+            <div class="flex justify-center">
+                <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-200 hover:border-gray-200 transition-colors" clicked>ALL</a>
+                <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-500 hover:border-gray-200 transition-colors">CODED</a>
+                <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-500 hover:border-gray-200 transition-colors">DESIGNED</a>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+                <div class="row-span-2 flex items-center">
+                    <img src="assert/image/design/gmdn.png" alt="Image" class="w-full border-2">
+                </div>
+                <div class="flex items-center flex-col justify-center gap-10 border-2">
+                    <h3>Coded, designed</h3>
+                    <h1 class="font-bold text-2xl">PORTFOLIO UI DESIGN</h1>
+                    <div>
+                        <a href="#" class="py-2 px-4 border-l-2 border-r-2 px-2 hover:bg-gray-600 transition-colors">
+                            GITHUB</a>
+                    </div>
+                </div>
+                <img src="assert/image/design/bts.png" alt="Image" class="w-full border-2">
+                <img src="assert/image/design/mnlbtc.png" alt="Image" class="w-full border-2">
+                <img src="assert/image/design/hadx.png" alt="Image" class="w-full border-2">
+            </div>
+        </div>        
+    </div>
+
+    <script>
+        // Remove or Add effect
+        function selectTab(event) {
+            document.querySelectorAll('.tab-item').forEach(tab => {
+                tab.classList.remove('border-gray-200');
+                tab.classList.add('border-gray-500');
+            });
+            event.target.classList.remove('border-gray-500');
+            event.target.classList.add('border-gray-200');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assert/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200 montserrat-font">
+    <!-- Navigation bar -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="bg-black p-4 text-white flex justify-end gap-20 font-semibold">
+            <a href="#about-me" class="p-3 hover:underline">About me</a>
+            <a href="#skills" class="p-3 hover:underline">Skills</a>
+            <a href="#portfolio" class="p-3 hover:underline">Portfolio</a>
+            <a href="#contact"
+                class="bg-white rounded-full text-black p-3 mr-10 transition-transform transform hover:scale-105 hover:bg-gray-200 transition-colors">
+                CONTACT ME</a>
+        </div>
+    </nav>
+
+
+    <!-- HOME PAGE -->
+    <div id="home-page" class="flex flex-col min-h-screen">
+        <div class="flex-grow flex flex-col bg-gray-800">
+            <!-- Big picture -->
+            <div class="flex flex-grow relative">
+                <!-- Left Section -->
+                <div class="left-section flex justify-center items-center">
+                    <div class="flex flex-col justify-center gap-20 text-black">
+                        <!-- Logo -->
+                        <div>
+                            <img src="assert/image/logo.png" alt="Icon" class="w-16 border-4 border-current p-2 rounded-lg">
+                        </div>
+                        <!-- Greeting -->
+                        <h2 class="text-3xl font-semibold">Hi, I am</h2>
+                        <!-- Name and Position -->
+                        <div>
+                            <h1 class="text-5xl font-bold">Nguyễn Bảo Châu</h1>
+                            <h3 class="text-xl text-gray-400 font-semibold py-2">23520171 - CTTT2023</h3>
+                        </div>
+                        <!-- Social link -->
+                        <div class="flex gap-10 py-10">
+                            <a href="#" class="social-button">
+                                <img src="assert/image/github-icon.svg" alt="Icon" class="w-10">
+                            </a>
+                            <a href="#" class="social-button">
+                                <img src="assert/image/linkedin-icon.svg" alt="Icon" class="w-10">
+                            </a>
+                            <a href="#" class="social-button">
+                                <img src="assert/image/fb-icon.svg" alt="Icon" class="w-10">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Section -->
+                <div class="right-section flex items-end justify-start text-white">
+                    <img src="assert/image/picture.png" alt="Image" class="w-3/5 pl-16">
+                </div>
+            </div>
+            
+            <!-- Information -->
+            <div class="h-1/4 p-8 flex flex-col gap-5 text-white">
+                <h2 class="text-xl font-bold">INTRODUCTION</h2>
+                <p class="font-sans">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book.</p>
+                <div>
+                    <a href="#" class="py-2 px-4 border-l-2 border-r-2 px-2 hover:bg-gray-600 transition-colors">
+                        READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ABOUT ME -->
+    <div id="about-me" class="min-h-screen">
+        <div class="flex-grow flex items-center justify-center flex-col gap-20 bg-gray-200">
+            <div></div>
+            <!-- Title -->
+            <div>
+                <h1 class="text-2xl tracking-widest font-bold py-6 px-12 border-8 border-current">ABOUT ME</h1>
+            </div>
+                
+            <!-- Description -->
+            <div class="w-2/3">
+                <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley.</p>
+            </div>
+    
+            <!-- Explore button -->
+            <div class="font-semibold">
+                <a href="#" class="py-3 px-6 border-l-2 border-r-2 border-current px-2 hover:bg-gray-400 transition-colors">
+                    EXPLORE</a>
+            </div>
+    
+            <!-- Separator -->
+            <div>
+                <img src="assert/image/separatorBlack 1.svg" alt="Image" class="">
+            </div>
+    
+            <!-- Skill Detail -->
+            <div class="flex flex-col gap-10">
+                <div class="flex justify-center gap-20">
+                    <!-- Skill 1 -->
+                    <div class="w-1/3">
+                        <h2 class="font-bold text-2xl">SKILL 1</h2>
+                        <P>web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</P>
+                    </div>
+                    <!-- Skill 2 -->
+                    <div class="w-1/3">
+                        <h2 class="font-bold text-2xl">SKILL 2</h2>
+                        <P>web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</P>
+                    </div>
+                </div>
+    
+                <div class="flex justify-center">
+                    <!-- Skill 2 -->
+                    <div class="w-1/3">
+                        <h2 class="font-bold text-2xl">SKILL 2</h2>
+                        <P>web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</P>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Separator -->
+            <div>
+                <img src="assert/image/separatorBlack 1.svg" alt="Image" class="">
+            </div>
+    
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- SKILL -->
+    <div id="skills" class="min-h-screen">
+        <div class="flex-grow flex items-center justify-center flex-col gap-20 bg-gray-200">
+            <div></div>
+            <!-- Title -->
+            <div>
+                <h1 class="text-2xl tracking-widest font-bold py-6 px-12 border-8 border-current">SKILL</h1>
+            </div>
+                
+            <!-- Using now -->
+            <div class="w-2/5">
+                <h3 class="font-bold text-2xl">USING NOW</h3>
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-x-24 gap-y-14">
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/html.svg" alt="Image">
+                        <p class="pt-3">HTML5</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/css.svg" alt="Image">
+                        <p class="pt-3">CSS3</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/sass.svg" alt="Image">
+                        <p class="pt-3">SASS</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/javascript.svg" alt="Image">
+                        <p class="pt-3">JAVASCRIPT</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/react.svg" alt="Image">
+                        <p class="pt-3">REACT</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/bootstrap.svg" alt="Image">
+                        <p class="pt-3">BOOTSTAP</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/git.svg" alt="Image">
+                        <p class="pt-3">GIT</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/figma.svg" alt="Image">
+                        <p class="pt-3">FIGMA</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Learning -->
+            <div class="w-2/5">
+                <h3 class="font-bold text-2xl">LEARNING</h3>
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-x-24 gap-y-14">
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/nodejs.svg" alt="Image">
+                        <p class="pt-3">NODEJS</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/mysql.svg" alt="Image">
+                        <p class="pt-3">mysql</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/mongodb.svg" alt="Image">
+                        <p class="pt-3">MONGODB</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/typescript.png" alt="Image">
+                        <p class="pt-3">TYPESCRIPT</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Other -->
+            <div class="w-2/5">
+                <h3 class="font-bold text-2xl">OTHER SKILL</h3>
+            </div>
+            <div>
+                <div class="grid grid-cols-4 gap-x-24 gap-y-14">
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/english.svg" alt="Image">
+                        <p class="pt-3">ENGLISH</p>
+                        <p>IELTS 7.0</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/vietnam.png" alt="Image" class="w-24">
+                        <p class="pt-3">VIETNAMESE</p>
+                        <p>FLUENTLY</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/cpp.svg" alt="Image">
+                        <p class="pt-3">C++</p>
+                    </div>
+                    <div class="flex items-center flex-col w-24">
+                        <img src="assert/image/skills/c.svg" alt="Image">
+                        <p class="pt-3">C</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div></div>
+    
+        </div>
+    </div>
+
+
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="min-h-screen">
+        <div class="flex-grow flex items-center justify-center flex-col gap-20 bg-cover bg-center" style="background-image: url('assert/image/background.jpg');">
+            <div></div>
+            <!-- Title -->
+            <div>
+                <h1 class="text-2xl tracking-widest font-bold py-6 px-12 border-8 border-current">PORTFOLIO</h1>
+            </div>
+            
+            <!-- Display section -->
+            <div class="bg-black flex-grow w-full text-white flex flex-col gap-5">
+                <div class="flex justify-center">
+                    <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-200 hover:border-gray-200 transition-colors" clicked>ALL</a>
+                    <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-500 hover:border-gray-200 transition-colors">CODED</a>
+                    <a href="#" onclick="selectTab(event)" class="tab-item py-3 px-24 border-b-2 border-gray-500 hover:border-gray-200 transition-colors">DESIGNED</a>
+                </div>
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="row-span-2 flex items-center">
+                        <img src="assert/image/design/gmdn.png" alt="Image" class="w-full border-2">
+                    </div>
+                    <div class="flex items-center flex-col justify-center gap-10 border-2">
+                        <h3>Coded, designed</h3>
+                        <h1 class="font-bold text-2xl">PORTFOLIO UI DESIGN</h1>
+                        <div>
+                            <a href="#" class="py-2 px-4 border-l-2 border-r-2 px-2 hover:bg-gray-600 transition-colors">
+                                GITHUB</a>
+                        </div>
+                    </div>
+                    <img src="assert/image/design/bts.png" alt="Image" class="w-full border-2">
+                    <img src="assert/image/design/mnlbtc.png" alt="Image" class="w-full border-2">
+                    <img src="assert/image/design/hadx.png" alt="Image" class="w-full border-2">
+                </div>
+            </div>        
+        </div>
+    
+        <script>
+            // Remove or Add effect
+            function selectTab(event) {
+                document.querySelectorAll('.tab-item').forEach(tab => {
+                    tab.classList.remove('border-gray-200');
+                    tab.classList.add('border-gray-500');
+                });
+                event.target.classList.remove('border-gray-500');
+                event.target.classList.add('border-gray-200');
+            }
+        </script>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div id="contact" class="min-h-screen">
+        <div class="flex-grow flex items-center justify-center flex-col gap-16 bg-gray-200">
+            <div></div>
+            <!-- Title -->
+            <div>
+                <h1 class="text-2xl tracking-widest font-bold py-6 px-12 border-8 border-current">CONTACT</h1>
+            </div>
+                
+            <!-- Description -->
+            <div class="w-3/5 flex flex-col items-center">
+                <p class="text-center py-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley.</p>
+                <!-- Separator -->
+                <img src="assert/image/separatorBlack 1.svg" alt="Image" class="">
+            </div>
+    
+            <!-- Input -->
+            <form action="" class="w-1/2 flex flex-col gap-y-10">
+                <div>
+                    <label for="name"></label>
+                    <input id="name" type="text" placeholder="ENTER YOUR NAME*" class="bg-gray-200 w-full p-2 border-l-4 border-b-4 border-current outline-none focus:bg-white transition-all duration-200" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input id="email" type="text" placeholder="ENTER YOUR EMAIL*" class="bg-gray-200 w-full p-2 border-l-4 border-b-4 border-current outline-none focus:bg-white transition-all duration-200" required>
+                </div>
+                <div>
+                    <label for="phone"></label>
+                    <input id="phone" type="text" placeholder="PHONE NUMBER" class="bg-gray-200 w-full p-2 border-l-4 border-b-4 border-current outline-none focus:bg-white transition-all duration-200">
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <textarea id="message" type="text" placeholder="YOUR MESSAGE*" class="bg-gray-200 w-full h-40 p-2 border-l-4 border-b-4 border-current outline-none focus:bg-white transition-all duration-200" required></textarea>
+                </div>
+            </form>
+    
+            <!-- Submit -->
+            <div class="font-semibold">
+                <a href="#" class="py-3 px-12 border-l-2 border-r-2 border-current px-2 hover:bg-gray-400 transition-colors">
+                    SUBMIT</a>
+            </div>
+    
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black flex flex-col items-center justify-center gap-y-10 text-white">
+        <div></div>
+        <!-- Back to top -->
+        <a href="#home-page" class="flex flex-col items-center transition-transform duration-200 transform hover:scale-150">
+            <img src="assert/image/double-arrow.svg" alt="Icon">
+            <p>BACK TO TOP</p>
+        </a>
+
+        <!-- Social Link -->
+        <div class="flex justify-center gap-x-5">
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="assert/image/small-social/fb.svg" alt="Icon">
+            </a>
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="assert/image/small-social/ig.svg" alt="Icon">
+            </a>
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="assert/image/small-social/in.svg" alt="Icon">
+            </a>
+            <a href="#" class="transition-transform transform hover:scale-110">
+                <img src="assert/image/small-social/mail.svg" alt="Icon">
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <div>
+            <p class="font-sans"><span class="font-bold">@2024 Nguyen Bao Chau</span> All Rights Reserved.</p>
+        </div>
+
+        <div></div>
+    </footer>
+
+</body>
+
+</html>
