@@ -21,13 +21,13 @@
 /* split background */
 .left-section {
     background-color: #e5e7eb;
-    width: 40%;
+    width: 60%;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); /* Đường chéo chia cắt */
 }
 
 .right-section {
     background-color: #000000; /* Màu xám đậm */
-    width: 60%;
+    width: 40%;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%); /* Đường chéo chia cắt */
     right: 0;
 }
@@ -36,4 +36,3 @@
 html {
     scroll-behavior: smooth;
   }
-  
