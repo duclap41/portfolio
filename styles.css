@@ -1,0 +1,264 @@
+/* Custom Tailwind Configuration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root Variables */
+:root {
+    --cyan-600: #0891b2;
+    --cyan-700: #0e7490;
+    --cyan-50: #ecfeff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cyan-600);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cyan-700);
+}
+
+/* Navigation Links */
+.nav-link {
+    @apply text-gray-600 hover:text-cyan-600 transition-colors duration-300 font-medium;
+}
+
+/* Buttons */
+.btn-primary {
+    @apply bg-cyan-600 text-white px-8 py-3 rounded-full font-medium hover:bg-cyan-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-secondary {
+    @apply bg-white text-cyan-600 px-8 py-3 rounded-full font-medium border-2 border-cyan-600 hover:bg-cyan-600 hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+}
+
+/* Social Links */
+.social-link {
+    @apply text-gray-600 hover:text-cyan-600 transform hover:scale-110 transition-all duration-300;
+}
+
+/* Section Title */
+.section-title {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800;
+}
+
+/* Typing Animation */
+.typing-text {
+    position: relative;
+}
+
+.typing-text::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+/* Blob Animation */
+@keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+/* Stat Cards */
+.stat-card {
+    @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+/* Skill Category */
+.skill-category {
+    @apply bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 text-center;
+}
+
+/* Skill Progress Bar */
+.skill-item {
+    @apply text-left;
+}
+
+.skill-bar {
+    @apply w-full bg-gray-200 rounded-full h-2 mt-2;
+}
+
+.skill-progress {
+    @apply bg-gradient-to-r from-cyan-500 to-cyan-600 h-2 rounded-full transition-all duration-1000 ease-out;
+}
+
+/* Project Cards */
+.project-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300 hover:shadow-xl;
+}
+
+.project-image {
+    @apply relative overflow-hidden h-48;
+}
+
+.project-image img {
+    @apply w-full h-full object-cover;
+}
+
+.project-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100;
+}
+
+/* Tech Tags */
+.tech-tag {
+    @apply px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-sm font-medium;
+}
+
+/* Form Inputs */
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent transition-all duration-300;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    @apply fixed bottom-8 right-8 bg-cyan-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-cyan-700 transform hover:scale-110 transition-all duration-300 opacity-0 invisible;
+}
+
+.back-to-top.visible {
+    @apply opacity-100 visible;
+}
+
+/* Navbar Scroll Effect */
+.navbar-scrolled {
+    @apply shadow-lg py-3;
+}
+
+/* Loading Animation */
+.loader {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid var(--cyan-600);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        @apply text-3xl;
+    }
+    
+    .typing-text::after {
+        display: none;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Page transitions */
+.page-transition {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effects for images */
+.hover-grow {
+    transition: transform 0.3s ease;
+}
+
+.hover-grow:hover {
+    transform: scale(1.05);
+}
+
+/* Glass morphism effect */
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Custom underline animation */
+.underline-animation {
+    position: relative;
+    display: inline-block;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background-color: var(--cyan-600);
+    transition: all 0.3s ease;
+}
+
+.underline-animation:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(8, 145, 178, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(8, 145, 178, 0);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}

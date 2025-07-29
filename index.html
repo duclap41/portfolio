@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Duc Lap - AI Engineer Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold text-cyan-600 hover:text-cyan-700 transition-colors">
+                    NDL
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#home" class="block nav-link">Home</a>
+                <a href="#about" class="block nav-link">About</a>
+                <a href="#skills" class="block nav-link">Skills</a>
+                <a href="#projects" class="block nav-link">Projects</a>
+                <a href="#contact" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-50 to-white"></div>
+        <canvas id="particle-canvas" class="absolute inset-0"></canvas>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">
+                    <span class="text-gray-800">Hi, I'm</span>
+                    <span class="text-cyan-600 typing-text"> Nguyen Duc Lap</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">AI Engineer & Computer Science Graduate</p>
+                <div class="flex justify-center space-x-4 mb-8">
+                    <a href="#contact" class="btn-primary">
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="btn-secondary">
+                        View Projects
+                    </a>
+                </div>
+                <div class="flex justify-center space-x-6 text-2xl">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-cyan-600"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <div class="relative">
+                        <div class="w-64 h-64 mx-auto relative">
+                            <div class="absolute inset-0 bg-cyan-600 rounded-full animate-blob"></div>
+                            <div class="absolute inset-0 bg-cyan-400 rounded-full animate-blob animation-delay-2000"></div>
+                            <div class="absolute inset-0 bg-cyan-300 rounded-full animate-blob animation-delay-4000"></div>
+                            <img src="https://via.placeholder.com/256" alt="Profile" 
+                                 class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl">
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <h3 class="text-3xl font-bold mb-4 text-gray-800">AI Engineer & Problem Solver</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate AI Engineer with a Bachelor's degree in Computer Science. 
+                        Since March 2025, I've been working on cutting-edge AI solutions that push 
+                        the boundaries of what's possible.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        My expertise lies in developing intelligent systems that solve real-world problems. 
+                        I'm constantly learning and exploring new technologies to stay at the forefront 
+                        of the AI revolution.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-card">
+                            <div class="text-3xl font-bold text-cyan-600 mb-1">10+</div>
+                            <div class="text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="text-3xl font-bold text-cyan-600 mb-1">5+</div>
+                            <div class="text-gray-600">AI Models Deployed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI & Machine Learning -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl text-cyan-600 mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">AI & Machine Learning</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span>TensorFlow & PyTorch</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Deep Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Computer Vision</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl text-cyan-600 mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Programming</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl text-cyan-600 mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Tools & Frameworks</h3>
+                    <div class="space-y-3">
+                        <div class="skill-item">
+                            <span>Docker & Kubernetes</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>AWS & Cloud</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>REST APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <!-- Featured Projects Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#" class="text-white text-2xl hover:scale-110 transition-transform">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI-Powered Image Recognition</h3>
+                        <p class="text-gray-600 mb-4">
+                            Advanced computer vision system for real-time object detection and classification
+                            using deep learning models.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-cyan-600 hover:text-cyan-700 font-medium">
+                                Learn More →
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#" class="text-white text-2xl hover:scale-110 transition-transform">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Natural Language Processing API</h3>
+                        <p class="text-gray-600 mb-4">
+                            RESTful API service for sentiment analysis and text classification with 
+                            transformer-based models.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">BERT</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-cyan-600 hover:text-cyan-700 font-medium">
+                                Learn More →
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#" class="text-white text-2xl hover:scale-110 transition-transform">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Predictive Analytics Dashboard</h3>
+                        <p class="text-gray-600 mb-4">
+                            Real-time data visualization and predictive modeling platform for business 
+                            intelligence and decision making.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-cyan-600 hover:text-cyan-700 font-medium">
+                                Learn More →
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View All Projects Button -->
+            <div class="text-center">
+                <button class="btn-primary" onclick="showAllProjects()">
+                    View All Projects
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-center text-gray-600 mb-12" data-aos="fade-up" data-aos-delay="100">
+                    I'm always interested in hearing about new opportunities and challenging projects. 
+                    Feel free to reach out if you'd like to collaborate!
+                </p>
+                
+                <form class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" class="form-input" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" class="form-input" placeholder="your.email@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Subject</label>
+                        <input type="text" class="form-input" placeholder="How can I help you?">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Message</label>
+                        <textarea class="form-input h-32 resize-none" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+                
+                <!-- Contact Info -->
+                <div class="grid md:grid-cols-3 gap-8 mt-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="text-3xl text-cyan-600 mb-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Email</h4>
+                        <p class="text-gray-600">nguyenduclap@example.com</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl text-cyan-600 mb-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Location</h4>
+                        <p class="text-gray-600">Vietnam</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl text-cyan-600 mb-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Phone</h4>
+                        <p class="text-gray-600">+84 123 456 789</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="mb-4 md:mb-0">© 2024 Nguyen Duc Lap. All rights reserved.</p>
+                <div class="flex space-x-6 text-xl">
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fab fa-github"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
